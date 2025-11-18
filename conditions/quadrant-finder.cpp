@@ -7,24 +7,28 @@ int main(){
 	cin >> x;
 	cout << "Enter The 'y' COORDINATE: ";
 	cin >> y;
-	if(x>0 && y>0 || x>0 && y==0 || x==0 && y>0){
+	if(x>0 && y>0){
 		puts("The Point Lies In The First Quadrant.");
 	}
-	else if(x<0 && y==0 || x<0 && y>0){
+	else if(y==0){
+		puts("The Point Lies On The x Axis.");
+	}
+	else if(x==0){
+		puts("The Point Lies On The y Axis.");
+	}
+	else if(x<0 && y>0){
 		puts("The Point Lies In The Second Quadrant.");
 	
 	}
-	else if(x<0 && y<0 || x==0 && y<0 || x<0 && y==0){
+	else if(x<0 && y<0){
 		puts("The Point Lies In The Third Quadrant.");
 	}
-	else if(x==0 && y<0 || x>0 && y<0){
+	else if(x>0 && y<0){
 		puts("The Point Lies In The Fourth Quadrant.");
 	}
 	else {
 		puts("The Point Is The Origin.");
 	}
 	return 0;
-
-
-
 }
+//updated & fixed!!!!
